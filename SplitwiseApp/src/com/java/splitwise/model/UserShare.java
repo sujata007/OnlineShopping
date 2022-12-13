@@ -1,6 +1,6 @@
 package src.com.java.splitwise.model;
 
-public class UserShare {
+public abstract class UserShare {
 	private User user;
 	private double amount;
 

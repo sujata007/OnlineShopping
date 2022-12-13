@@ -54,4 +54,6 @@ public abstract class Expense {
 	public String getExpenseId() {
 		return expenseId;
 	}
+
+	public abstract boolean validate();
 }
