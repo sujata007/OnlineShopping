@@ -1,4 +1,4 @@
-package com.java.splitwise.model;
+package src.com.java.splitwise.model;
 
 public class User {
 	private int userId;
