@@ -13,16 +13,15 @@ public class PercentageExpense extends Expense {
 	@Override
 	public boolean validate() {
 		// TODO Auto-generated method stub
-		double totalAmount = getTotalAmount();
-		int amount =0;
+		int total =0;
 		for(UserShare shareOfEachUser : getMoneyTobeSplittedAmong()) {
 			if(!(shareOfEachUser instanceof UserShareByPercentage)) {
 				return false;
 			}
 			UserShareByPercentage share = (UserShareByPercentage)shareOfEachUser;
-			amount+=share.getPercent();
+			total+=share.getPercent();
 		}
-		return amount==totalAmount;
+		return 100==total;
 	}
 
 }
